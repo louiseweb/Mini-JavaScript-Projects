@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Note Taker</title>
+</head>
+
+<body class="note-taker__body">
+    <div class="note-taker__overlay" id="note-taker-overlay">
+        <div class="note-taker__overlay-note-container">
+            <section class="note-taker__overlay-note" id="overlay-note">
+                <i class="fas fa-times" id="close-btn"></i>
+                <p id=overlay-text></p>
+            </section>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <button class="home-btn"><a href="index.html">Home</a></button>
+        <div class="note-taker-container">
+            <header class="note-taker__header">
+                <h1 class="note-taker__heading">Note Taker</h1>
+                <h2 class="note-taker__subheading">Add a new note:</h2>
+            </header>
+            <div class="note-taker__textarea">
+                <label class="note-taker__textfield-label" for="textarea">Note:</label>
+                <textarea class="note-taker__textfield" name="textarea" id="text-field" cols="30" rows="10"></textarea>
+            </div>
+            <button class="note-taker__add-btn" id="add-btn">Add Note</button>
+            <section class="note-taker__notes" id="notes">
+                <!-- Javascript Notes -->
+            </section>
+        </div>
+    </div>
+    <script src="note-taker.js"></script>
+</body>
+
+</html>

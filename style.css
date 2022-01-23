@@ -1,0 +1,309 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+button {
+  min-width: 100px;
+  padding: 10px;
+  display: inline-block;
+}
+
+button:not(:last-child) {
+  margin-right: 10px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: gainsboro;
+  padding: 10px;
+}
+
+td {
+  border: 1px gainsboro solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.home-btn {
+  margin-top: 50px;
+  justify-self: flex-start;
+  margin-bottom: 200px;
+}
+
+/* Home */
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Todo App */
+.todos__container {
+  display: flex;
+  justify-content: center;
+}
+
+.todos__top {
+  margin-bottom: 40px;
+}
+
+.todos__input {
+  width: 300px;
+}
+
+.todos__item {
+  width: 100%;
+  display: flex;
+  background-color: rgb(247, 187, 187);
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.todos__checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+}
+
+/* Expense Tracker */
+.tracker__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tracker__form {
+  margin-bottom: 50px;
+}
+
+.tracker__checkbox {
+  margin: 0px;
+  height: 15px;
+  width: 15px;
+}
+
+/* Note Taker */
+.note-taker__body {
+  min-height: 100vh;
+  width: 100%;
+}
+.note-taker__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.note-taker__overlay-note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.note-taker__overlay-note {
+  background-color: white;
+  padding: 30px;
+  width: 60%;
+}
+
+i {
+  margin-bottom: 20px;
+}
+
+.note-taker-container {
+  position: relative;
+  text-align: center;
+}
+
+.note-taker__header {
+  margin-bottom: 50px;
+}
+
+.note-taker__textarea {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.note-taker__textfield {
+  width: 100%;
+}
+
+.note-taker__textfield-label {
+  float: left;
+}
+
+.note-taker__add-btn {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.note-taker__notes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.note-taker__note {
+  border: 1px solid gainsboro;
+  padding: 30px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.note-taker__note p {
+  margin-bottom: 20px;
+  height: 33.3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-taker__note p h3 {
+  height: 33.3%;
+}
+
+.note-taker__note button {
+  height: 33.3%;
+  align-self: flex-start;
+}
+
+/* Vowel Counter */
+.vowel-counter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vowel-counter__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vowel-counter__text-input {
+  display: block;
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+/* Memory Game */
+.memory-game {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-btn-memory {
+  margin-bottom: 10px;
+}
+
+.memory-game__heading {
+  text-align: center;
+}
+
+.memory-game__tiles {
+  margin: 0 auto;
+  width: 500px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-bottom: 400px;
+}
+
+.memory-game__tile {
+  position: relative;
+  cursor: pointer;
+}
+
+.tile-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(173, 173, 173);
+}
+
+.memory-game__tile img {
+  object-fit: contain;
+  width: 100%;
+}
+
+/* Hide and show Items */
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}

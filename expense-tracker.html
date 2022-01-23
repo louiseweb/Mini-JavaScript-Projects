@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <button class="home-btn"><a href="index.html">Home</a></button>
+        <header class="tracker__header">
+            <h1 class="tracker__heading">Expense Tracker</h1>
+            <h2 class="tracker__sub-heading">Add a new item:</h2>
+        </header>
+        <form class="tracker__form">
+            <label for="name">Name:</label>
+            <input class="tracker__name-input" type="text" name="name" id="name-input">
+            <label for="date">Date:</label>
+            <input class="tracker__date-input" type="date" name="date" id="date-input">
+            <label for="date">Amount:</label>
+            <input class="tracker__amount-input" type="number" name="amount" id="amount-input">
+            <button class="tracker__add-btn" id="add-btn">Add Expense</button>
+        </form>
+        <table class="table" id="table">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th></th>
+            </tr>
+            <tr class="table__row" id="table-row">
+            </tr>
+        </table>
+    </div>
+    <script src="expense-tracker.js"></script>
+</body>
+
+</html>
